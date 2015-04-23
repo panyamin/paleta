@@ -6,7 +6,7 @@ module Paleta
       require 'RMagick' unless defined?(Magick)
       klass.extend(ClassMethods)
     rescue LoadError
-      puts "You must install RMagick to use Palette.generate(:from => :image, ...)"
+      # puts "You must install RMagick to use Palette.generate(:from => :image, ...)"
     end
 
     module ClassMethods
